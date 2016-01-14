@@ -92,20 +92,68 @@
 * 关于迪米特法则(最少知识原则): 写一段代码违反它, 然后修复它。
 
 （注: 迪米特法则：the Law of Demeter, 最少知识原则： the Principle of Least Knowledge）
-
+* Active-Record模式有什么限制和缺陷？
+* Data-Mapper模式和Active-Record模式有什么区别？
+* 空对象模式(Null Object Pattern)的目的是什么？
+* 为什么组合(Composition)比继承(Inheritance)更加有好？
+* 什么是反腐败层(Anti-corruption Layer)?
+* 你可以写一个线程安全的单例(Singleton)类吗？
+* Could you implement Objects in terms of Higher Order Functions, and vice-versa?
+* 数据抽象(Data Abstraction)能力是指能改变实现而不影响客户端的这种能力。请构造一个一个例子，违反这个特性，并且尝试修复它。
+* 你是如何处理依赖关系地狱(Dependency Hell)的？
+* 为什么goto语句是恶魔班的存在？
 
 ####[[↑]](#toc) <a name='design'>代码设计相关问题:</a>
 
+* What is the tests influence on design?
+* 内聚和耦合的区别是什么？
+* 重构在哪些场景下有用？
+* 代码中的注释有用吗？
+* 设计和架构有什么区别？
+* 为什么在测试驱动开发(TDD)中弦写测试，再写代码？
+* C++支持多继承，Java允许类实现多个接口。这些特性对正交性有什么影响？使用多继承和使用多接口有区别吗？[这个问题来自Andrew .Hunt 和 David Thomas写的《程序员修炼之道》]
+
 ####[[↑]](#toc) <a name='languages'>语言相关问题:</a>
+
+* 告诉我你钟爱的语言的三个最坏的缺陷
+* 为什么现在函数式编程这么越来越受关注？
+* 闭包是什么？它有什么用途？闭包和类有什么共同点？
+* 泛型有什么用途？
+* 什么是高阶函数？有什么用途？用你的首选语言写个例子出来。
+* Write a loop, then transform it into a recursive function, avoiding mutability. Discuss. 
+* 一个语言将函数视为第一公民，这是什么意思？
+* 用一个例子说明匿名函数其实是有用的。
+* 什么是动态方法调度(Dynamic Method Dispatch)？
+* 名字空间(Namespace)有什么用？有什么可以替代它的吗？
+* 谈谈Java和C#之间的互操作性(Interoperability) (任选其他两门语言都行)
+* 为什么很多软件工程师不喜欢Java？
+* 你认为好的语言好在哪里？差的语言差在哪里？
+* 写两个函数，一个是"引用透明的(Referentially Transparent)"，另一个是"引用不透明的(Referentially Opaque)"。讨论之。
+* 什么是栈？什么是堆？
+* 为什么一个语言中，"函数是第一公民"是很重要的？
+* How is Pattern Matching different than Switch clauses?
+* 为什么有些语言设计上没有异常机制？这有什么优劣？
+* 如果`Cat`是一个`Animal`, 那么`TaskCare<Cat>`是一个`TakeCare<Animal>`吗？
 
 ####[[↑]](#toc) <a name='web'>web相关问题:</a>
 
-
-
+* 为什么"第一方cookie(first-party cookie)"和"第三方cookie(third-party cookie)"被如此不同的对待？
 
 ####[[↑]](#toc) <a name='databases'>数据库相关问题:</a>
 
+* 如果要你将一个项目从MySQL迁移至PostgreSQL中，你会如何进行这个迁移？
+* 为什么```SELECT * FROM table WHERE field = null```不能匹配空的字段？
+* 什么是ACID(原子性，一致性，隔离性，持久性)
+* 你是如何进行数据库模式(Database schema)迁移的？
+* 延迟加载(lazy loading)是如何实现的？什么场景下有用？他有什么缺陷？
+* 什么是N+1问题？
+* 如何找出应用中开销最大的查询？
+
 ####[[↑]](#toc) <a name='nosql'>非关系型数据库相关问题:</a>
+
+* 什么是最终一致性(Eventual Consistency)？
+* 关于CAP理论，举一些CP、AP、CA系统的例子。
+* NoSQL是如何解决可伸缩性的挑战的？
 
 ####[[↑]](#toc) <a name='codeversioning'>代码版本管理相关问题:</a>
 
