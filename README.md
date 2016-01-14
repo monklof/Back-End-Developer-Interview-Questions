@@ -86,6 +86,14 @@
 
 ####[[↑]](#toc) <a name='patterns'>设计模式相关问题:</a>
 
+* 请用一个例子表明，全局对象是邪恶的存在？
+* 假设你工作的系统不支持事务性，你会如何从头开始实现它？
+* 什么是好莱坞原则（Hollywood Principles）？
+* 关于迪米特法则(最少知识原则): 写一段代码违反它, 然后修复它。
+
+（注: 迪米特法则：the Law of Demeter, 最少知识原则： the Principle of Least Knowledge）
+
+
 ####[[↑]](#toc) <a name='design'>代码设计相关问题:</a>
 
 ####[[↑]](#toc) <a name='languages'>语言相关问题:</a>
