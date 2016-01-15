@@ -157,9 +157,37 @@
 
 ####[[↑]](#toc) <a name='codeversioning'>代码版本管理相关问题:</a>
 
+* 为什么在Mercurial或者git中(管理)分支比SVN容易？
+* 分散式版本控制系统（比如git），相比集中式版本控制系统（如svn）有哪些优势和劣势？
+
+(注:
+* 分散式版本控制系统: Centralized Version Control Systems
+* 集中式版本控制系统: Distributed Version Control Systems)
+
+* 能描述一下什么是GitHubFlow和GitFlow工作流吗？
+* 什么是rebase？
+* 为什么合并操作(merge)在Mercurial和git中比在SVN和CVS中容易？
+
 ####[[↑]](#toc) <a name='concurrency'>并发问题:</a>
 
+* 为什么我们需要并发呢？解释一下。
+* 为什么测试多线程/并发代码这么困难？
+* 什么是竞争条件（Race Condition）？用任何一个语言写一个例子。
+* 什么是死锁？用代码解释一下。
+* 什么是饿死？
+* 什么是Wait-Free算法？
+
 ####[[↑]](#toc) <a name='distributed'>分布式系统相关问题:</a>
+
+* 怎么测试一个分布式系统？
+* 什么场景下你会在两个系统中采用异步通信机制？
+* 远程过程调用的通用缺点是什么？
+* 如果你为了可扩展性和鲁棒性而构建一个分布式的系统，在封闭安全的网络环境下和地理上的位置不同但是网络环境不是封闭和安全的，这两种情况下你会考虑什么不同的事情？
+* 在Web应用中如何管理容错性？在桌面端呢？
+* 在分布式系统中，如何处理故障？
+* 让我们来谈谈网络分裂(network partitions)后有的几种恢复的手段吧。
+* 你认为分布式计算中有哪些谬论？
+* 你在什么时候会使用Request/Response模式，什么时候使用Publish/Subscribe模式？
 
 ####[[↑]](#toc) <a name='management'>软件生命周期和团队管理相关问题:</a>
 
