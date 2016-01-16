@@ -1,4 +1,4 @@
-后端开发者面试题
+后端开发面试题
 ================
 
 ## 说明
@@ -9,7 +9,7 @@
 
 以下是原文翻译。
 
-后端开发者面试题
+后端开发面试题
 ================
 
 在面试的时候，我并不特别喜欢问一些技术性的问题。我更喜欢的方式是这样的: 和面试者坐在一起，看一些实际的代码，解决一些实际的问题。并且用一整天的时间，让团队所有成员轮流和面试者进行结对编程。虽然如此，但是一些技术问题仍然可以用来很好地启动一段有深度的谈话，能够让面试者和面试官相互都有更加深入的了解。
@@ -160,9 +160,7 @@
 * 为什么在Mercurial或者git中(管理)分支比SVN容易？
 * 分散式版本控制系统（比如git），相比集中式版本控制系统（如svn）有哪些优势和劣势？
 
-(注:
-* 分散式版本控制系统: Centralized Version Control Systems
-* 集中式版本控制系统: Distributed Version Control Systems)
+(注:分散式版本控制系统: Centralized Version Control Systems；集中式版本控制系统: Distributed Version Control Systems)
 
 * 能描述一下什么是GitHubFlow和GitFlow工作流吗？
 * 什么是rebase？
@@ -191,6 +189,19 @@
 
 ####[[↑]](#toc) <a name='management'>软件生命周期和团队管理相关问题:</a>
 
+* 什么是敏捷？
+* 你是如何处理遗留代码的？
+* I'm the CEO of your Company. Explain me Kanban and convince me to invest on it.
+* 敏捷和瀑布之间的最大区别是什么？
+* 作为团队管理者，你对会议太多这个问题是如何处理的？
+* 你会如何管理延期很久的项目？
+* "*Individuals and interactions over processes and tools*" and "*Customer collaboration over contract negotiation*" comprise half of the values of the Agile Manifesto. Discuss
+* 如果你是你们公司的CTO，你会采取什么样的决策？
+* 项目经理有用吗？
+* 如果要你组织一个弹性工作制的开发团队（即没有强制工作时间的要求），并且假期制度是"按需休假"，你会如何做？
+* 你会如何管理一个人员流动非常高的团队？如何在不加薪的条件下说服团队成员不要离开？
+* 除了代码之外，你最关注你的同事的哪3项素质？
+* 关于代码，你最希望非技术人员能知道的的三件事是什么？
 
 ####[[↑]](#toc) <a name='algorithms'>逻辑和算法相关问题:</a>
 
@@ -198,7 +209,15 @@
 * 写一段有栈溢出的代码
 * 写一个尾递归版本的阶乘函数
 * 使用任何一个你想用的语言，写一个REPL，功能是echo你输入的字符串。将他演化成一个逆波兰表达式的计算器。
-* 
+* How would you design a "defragger" utility?
+* 写一个生成随机迷宫的程序
+* 写一段有内存泄漏的示例代码
+* 生成一系列随机的数字，里面每个数字都不同
+* 写一个简单的垃圾回收系统
+* Write a basic message broker, using whatever language you like.
+* 写一个基础的web服务器，然后画一张线路图，展示你将来还想要实现的功能。
+* 如何对一个10GB的文件进行排序？如果是10TB的数据，你会采用什么方法？
+* 请实现`rnd()`函数
 
 ####[[↑]](#toc) <a name='architecture'>软件架构相关问题:</a>
 
@@ -227,10 +246,182 @@
 
 ####[[↑]](#toc) <a name='soa'>面向服务架构(SOA)和微服务(Microservice)相关问题:</a>
 
+* Why, in a SOA, long-lived transactions are discorauged and Sagas are suggested instead?
+* SOA和MicroService之间有什么区别？
+* 我们来谈谈Web服务的版本管理、版本兼容性、重大变更管理这些事情吧.
+* What's the difference between a transaction and a compensation operation in a saga, in SOA? 
+* 微服务不能做得太"微"，你认为什么时候微服务太"微"了？
+* MicroService架构的优劣是什么？
+
 ####[[↑]](#toc) <a name='security'>安全相关问题:</a>
+
+* 什么是双因素认证(Two Factor Authentication)？在一个已有的Web应用中，你如何实现这种机制？
 
 ####[[↑]](#toc) <a name='billgates'>比尔盖茨式问题:</a>
 
+* 如果你把一面镜子放在扫描仪上，会发生什么？
+* 假设有一个和你完全一样的克隆人，而他是你的上司，你愿意和他工作吗？
+* 现在请你面试一下我。
+* 为什么Quora上的回答会比Yahoo Answer上的回答好？
+* 对手是现代语言，你的任务是要为Cobol辩护，你会如何进行？
+* 10年后的你是什么样子？
+* 假设你是我老板，我被解雇了。你会如何通知我？
+* 我想要重构一个系统，而你想要从头重写。我们来争论一下该怎么弄吧。然后我们反转角色，再争论一下。
+* 老板要你对公司撒谎，你的反应是什么？
+* 如果你可以穿越到以前，你会给年轻时候的你什么建议？
+
 ####[[↑]](#toc) <a name='snippets'>代码示例问题:</a>
 
+* 这段Javascript函数的输出是什么？
+
+```javascript
+function hookupevents() {
+  for (var i = 0; i < 3; i++) {
+    document.getElementById("button" + i)
+      .addEventListener("click", function() { 
+        alert(i); 
+      });
+  }
+}
+```
+
+* 关于类型擦除(Type Erasure)，这段Java代码的输出是什么？为什么？
+
+```java
+ArrayList<Integer> li = new ArrayList<Integer>();
+ArrayList<Float> lf = new ArrayList<Float>();
+if (li.getClass() == lf.getClass()) // evaluates to true
+  System.out.println("Equal");
+```
+
+* 你能指出哪儿有内存泄漏吗？
+
+```java
+public class Stack {
+    private Object[] elements;
+    private int size = 0;
+    private static final int DEFAULT_INITIAL_CAPACITY = 16;
+
+    public Stack() {
+        elements = new Object[DEFAULT_INITIAL_CAPACITY];
+    }
+
+    public void push(Object e) {
+        ensureCapacity();
+        elements[size++] = e;
+    }
+   
+    public Object pop() {
+        if (size == 0)
+            throw new EmptyStackException();
+        return elements[--size];
+    }
+
+    /**
+     * Ensure space for at least one more element, roughly
+     * doubling the capacity each time the array needs to grow.
+     */
+    private void ensureCapacity() {
+        if (elements.length == size)
+            elements = Arrays.copyOf(elements, 2 * size + 1);
+    }
+}
+```
+
+* `if`语句，或者更加通用点，条件表达式通常是过程式编程/命令式编程的形式。你能去掉这段代码中的`switch`语句，用面向对象的方式来修改这段代码吗？
+
+```java
+public class Formatter {
+
+    private Service service;
+
+    public Formatter(Service service) {
+        this.service = service;
+    }
+
+    public String doTheJob(String theInput) {
+        String response = service.askForPermission();
+        switch (response) {
+        case "FAIL":
+            return "error";
+        case "OK":
+            return String.format("%s%s", theInput, theInput);
+        default:
+            return null;
+        }
+    }
+}
+```
+
+* 你能去掉这里的`if`语句，将它改成更加面向对象吗？
+
+```java
+public class TheService {
+    private final FileHandler fileHandler;
+    private final FooRepository fooRepository;
+
+    public TheService(FileHandler fileHandler, FooRepository fooRepository) {
+        this.fileHandler = fileHandler;
+        this.fooRepository = fooRepository;
+    }
+
+    public String Execute(final String file) {
+
+        final String rewrittenUrl = fileHandler.getXmlFileFromFileName(file);
+        final String executionId = fileHandler.getExecutionIdFromFileName(file);
+
+        if ((executionId == "") || (rewrittenUrl == "")) {
+            return "";
+        }
+
+        Foo knownFoo = fooRepository.getFooByXmlFileName(rewrittenUrl);
+
+        if (knownFoo == null) {
+            return "";
+        }
+
+        return knownFoo.DoThat(file);
+    }
+}
+```
+
+* 如何重构这段代码？
+
+```javascript
+function()
+{
+    HRESULT error = S_OK;
+
+    if(SUCCEEDED(Operation1()))
+    {
+        if(SUCCEEDED(Operation2()))
+        {
+            if(SUCCEEDED(Operation3()))
+            {
+                if(SUCCEEDED(Operation4()))
+                {
+                }
+                else
+                {
+                    error = OPERATION4FAILED;
+                }
+            }
+            else
+            {
+                error = OPERATION3FAILED;
+            }
+        }
+        else
+        {
+            error = OPERATION2FAILED;
+        }
+    }
+    else
+    {
+        error = OPERATION1FAILED;
+    }
+
+    return error;
+}
+```
 
