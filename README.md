@@ -194,7 +194,36 @@
 
 ####[[↑]](#toc) <a name='algorithms'>逻辑和算法相关问题:</a>
 
+* 只用LIFO栈如何构造一个FIFO队列？只用FIFO队列如何构造一个LIFO栈？
+* 写一段有栈溢出的代码
+* 写一个尾递归版本的阶乘函数
+* 使用任何一个你想用的语言，写一个REPL，功能是echo你输入的字符串。将他演化成一个逆波兰表达式的计算器。
+* 
+
 ####[[↑]](#toc) <a name='architecture'>软件架构相关问题:</a>
+
+* 什么情况下缓存是没用的，甚至是危险的？
+* 为什么事件驱动的架构能提高可扩展性(scalability)？
+* 什么样的代码是可读性强的代码？
+* 紧急设计(emergent design)和演化架构(Evolutionary Architecture)之间的区别是什么？
+* 横向扩展(scale out) vs 纵向扩展(scale up): 有什么区别？分别在什么时候使用？
+* How to deal with failover and user sessions?
+* 什么是CQRS(Command Query Responsibility Segregation)?他和最早的Command-Query Separation原则有什么区别？
+* 什么是三层架构？
+* 如何设计一个可扩展性高的系统？
+* 处理C10k问题的策略有哪些？
+* 如果邀你来设计一个去中心化的P2P系统，你会如何设计？
+* 为什么CGI的扩展性不好？
+* How would you defend the design of your systems against Vendor Lock-in?
+* 在可扩展性上，发布/订阅(Publish-Subscribe)模式有什么缺点？
+* When would you apply horizontal scaling and when vertical scaling?
+* 80年代以后，CPU有哪些变化？这些变化，对编程产生了什么影响？
+* In which part of the lifecycle performance should be taken in consideration, and how?
+* 除了恶意攻击造成的拒绝服务现象以外，哪些设计或者架构上的问题会导致拒绝服务？
+* 性能和可扩展性之间有什么关系？
+* 什么时候紧耦合是OK的？
+* What characteristic should a system have to be Cloud Ready?
+* Does unity of design imply an aristocracy of architects?
 
 ####[[↑]](#toc) <a name='soa'>面向服务架构(SOA)和微服务(Microservice)相关问题:</a>
 
