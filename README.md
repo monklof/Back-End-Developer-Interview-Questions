@@ -165,7 +165,7 @@
 * 为什么在Mercurial或者git中(管理)分支比SVN容易？
 * 分散式版本控制系统（比如git），相比集中式版本控制系统（如svn）有哪些优势和劣势？
 
-(注:分散式版本控制系统: Centralized Version Control Systems；集中式版本控制系统: Distributed Version Control Systems)
+(注:集中式版本控制系统: Centralized Version Control Systems；分散式版本控制系统: Distributed Version Control Systems)
 
 * 能描述一下什么是GitHubFlow和GitFlow工作流吗？
 * 什么是rebase？
