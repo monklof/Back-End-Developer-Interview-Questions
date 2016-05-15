@@ -5,7 +5,7 @@
 
 这篇文章翻译自一位外国友人的关于面试后端程序员的文章，我比较喜爱这篇文章。一是因为它极大的拓宽了我的视角，另一方面是其中的一些问题非常具有启发性。不仅对于面试者，对于面试官来说也是个不错的参考。于是迫不及待的翻译了一下，给各位看官做个参考。
 
-这篇文章中，许多问题我并没有完全理解，所以翻译可能存在不准确的地方。如果有读者发现有一些翻译有误或者不好的地方，请指出来，或者直接提Pull Request都可以。另外，还有一些题目没有理解作者的意图，所以用英文原文显示。目前正在和作者沟通这些问题，之后会补上这部分的翻译。感谢大家。
+这篇文章中，许多问题我并没有完全理解，所以翻译可能存在不准确的地方。如果有读者发现有一些翻译有误或者不好的地方，请不吝赐教。
 
 原文参见 [@arialdomartini](https://github.com/arialdomartini)的: [Back-End Developer Interview Questions](https://github.com/arialdomartini/Back-End-Developer-Interview-Questions)
 
@@ -72,7 +72,7 @@
 * 本周你学了什么？
 * 所有的设计中都会有美学元素(aesthetic element)的存在。问题是，你认为美学元素是你的朋友还是敌人？
 * 列出最近你读过的5本书。
-* How would you introduce Continue Delivery in a multi million waterfall shop?
+* 假设目前有个大型公司（非常有钱），他们的开发流程是瀑布式流程（Waterfall），如果需要你在他们公司引入持续交付（[Continue Devivery](https://en.wikipedia.org/wiki/Continuous_delivery)），你会怎么做？
 * 我们来谈谈"*重复造轮子*","*非我发明症*", "*吃自己做出来的狗粮*"的这些做法吧。
 
 (注: 重复造轮子: Reinventing the wheel; 非我发明症:Not Invented Here Syndrome; 吃自己做出来的狗粮: Eating Your Own Dog Food)
@@ -81,13 +81,14 @@
 * 为什么写软件是困难的？是什么使软件的维护变得困难？
 * 你更喜欢在全新项目（Green Field Project）上工作还是在已有项目(Brown Field Project)基础上工作？为什么？
 * [当你在浏览器地址栏输入google.com回车之后都发生了什么?](https://github.com/alex/what-happens-when)
-* What does your computer do when you wait?
+* 当操作系统CPU处于空闲的时候，它可能在处理哪些事情？
 * 如何向一个5岁的孩子解释什么是Unicode/数据库事务？
 * 如何维护单体架构(monolithic architecture)？
 * 一个"专业的开发者"意味着什么？
 * 软件开发是艺术、是技艺还是工程？你的观点是什么？
 * "喜欢这个的人也喜欢..."，如何在一个电子商务商店里实现这种功能？
 * 为什么在创新上，企业会比创业公司慢些？
+* 为什么说，你不应该尝试应用自己发明或者设计的密码学？
 
 ####[[↑]](#toc) <a name='patterns'>设计模式相关问题:</a>
 
@@ -103,20 +104,23 @@
 * 为什么组合(Composition)比继承(Inheritance)更好？
 * 什么是反腐败层(Anti-corruption Layer)?
 * 你可以写一个线程安全的单例(Singleton)类吗？
-* Could you implement Objects in terms of Higher Order Functions, and vice-versa?
 * 数据抽象(Data Abstraction)能力是指能改变实现而不影响客户端的这种能力。请构造一个一个例子，违反这个特性，并且尝试修复它。
 * 你是如何处理依赖关系地狱(Dependency Hell)的？
 * 为什么说goto语句是恶魔般的存在？
+* 健壮性是进行软件设计时的一个通用原则，它建议 *“发送时要保守，接收时要开放”*。这也经常被写成，“做一个有耐心的读者，做一个谨慎的作者”。你能解释一些这背后的逻辑吗？
+
+译者注： "发送时要保守，接收时要开发"的原文是： "Be conservative in what you send, be liberal in what you accept"，有点类似于“严于律己，宽于待人”的意味。
 
 ####[[↑]](#toc) <a name='design'>代码设计相关问题:</a>
 
-* What is the tests influence on design?
+* 你在进行软件设计时会考虑软件测试吗？软件测试是如何影响软件设计的？
 * 内聚和耦合的区别是什么？
 * 重构在哪些场景下有用？
 * 代码中的注释有用吗？
 * 设计和架构有什么区别？
 * 为什么在测试驱动开发(TDD)中是先写测试，再写代码？
 * C++支持多继承，Java允许类实现多个接口。这些特性对正交性有什么影响？使用多继承和使用多接口有区别吗？[这个问题来自Andrew .Hunt 和 David Thomas写的《程序员修炼之道》]
+* 在存储过程（Stored Procedures）中写业务逻辑有什么优缺点？
 
 ####[[↑]](#toc) <a name='languages'>语言相关问题:</a>
 
@@ -159,6 +163,7 @@
 * 什么是最终一致性(Eventual Consistency)？
 * 关于CAP理论，举一些CP、AP、CA系统的例子。
 * NoSQL是如何解决可伸缩性的挑战的？
+* 什么情况下你会使用类似于MongoDB的文档数据库而不是关系型数据库（如Mysql或者PostgreSQL）？
 
 ####[[↑]](#toc) <a name='codeversioning'>代码版本管理相关问题:</a>
 
@@ -215,7 +220,7 @@
 * 写一段有栈溢出的代码。
 * 写一个尾递归版本的阶乘函数。
 * 使用任何一个语言，写一个REPL，功能是echo你输入的字符串。然后将它演化成一个逆波兰表达式的计算器。
-* How would you design a "defragger" utility?
+* 如果需要你设计一个文件系统磁盘碎片整理程序，你会如何设计？
 * 写一个生成随机迷宫的程序。
 * 写一段有内存泄漏的示例代码。
 * 随机生成一个的数字序列，里面每个数字都不同。
