@@ -380,7 +380,7 @@ public class TheService {
         final String rewrittenUrl = fileHandler.getXmlFileFromFileName(file);
         final String executionId = fileHandler.getExecutionIdFromFileName(file);
 
-        if ((executionId == "") || (rewrittenUrl == "")) {
+        if ("".equals(executionId) || "".equals(rewrittenUrl)) {
             return "";
         }
 
