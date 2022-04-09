@@ -102,7 +102,7 @@
 * Data-Mapper模式和Active-Record模式有什么区别？
 * 空对象模式(Null Object Pattern)的目的是什么？
 * 为什么组合(Composition)比继承(Inheritance)更好？
-* 什么是反腐败层(Anti-corruption Layer)?
+* 什么是防腐层(Anti-corruption Layer)?
 * 你可以写一个线程安全的单例(Singleton)类吗？
 * 数据抽象(Data Abstraction)能力是指能改变实现而不影响客户端的这种能力。请构造一个一个例子，违反这个特性，并且尝试修复它。
 * 你是如何处理依赖关系地狱(Dependency Hell)的？
